@@ -14,8 +14,8 @@ func main() {
     }
 
     var test[10][10]int
-    for j := 0; j < 10; j++ {
-      for k := 0; k < 10; k++ {
+    for j := 0; j < len(test[0]); j++ {
+      for k := 0; k < len(test[1]); k++ {
         test[j][k] = j + k
       }
     }
